@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="ip">
+        {{ esg }}
+        {{ mrDeng.name }}
+    </div>
+
+    <script src="./vue (1).js"></script>
+    <script>
+        const vm = new Vue({
+            el: "#ip",
+            data: {
+                esg: '这是Vue响应式',
+                mrDeng: {
+                    name: '徐将',
+                    age: 19
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
